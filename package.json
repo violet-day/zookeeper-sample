@@ -1,0 +1,22 @@
+{
+  "name": "zookeeper-sample",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/violet-day/zookeeper-sample.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/violet-day/zookeeper-sample/issues"
+  },
+  "homepage": "https://github.com/violet-day/zookeeper-sample#readme",
+  "dependencies": {
+    "node-zookeeper-client": "^0.2.2"
+  }
+}
