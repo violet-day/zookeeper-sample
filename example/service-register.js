@@ -13,7 +13,7 @@ var data = {pid: process.pid, message: 'hello,I\'m ' + process.pid, path: '/' + 
 
 client.once('connected', function () {
   console.log('Connected to the server.');
-  client.mkdirp(serviceRootPath + data.path, new Buffer(JSON.stringify(data)), zookeeper.ACL.OPEN_ACL_UNSAFE, zookeeper.CreateMode.EPHEMERAL, function (error) {
+  client.create(serviceRootPath + data.path, new Buffer(JSON.stringify(data)), zookeeper.ACL.OPEN_ACL_UNSAFE, zookeeper.CreateMode.EPHEMERAL, function (error) {
     if (error) {
       console.error('Failed to create node: %s due to: %s.', data.path, error);
     } else {

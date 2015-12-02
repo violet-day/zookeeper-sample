@@ -13,4 +13,4 @@
 # 服务注册
 * `node example/service-center.js`,会创建services节点,并且创建多个children
 * 同时,也可以通过`node example/service-register.js`创建节点
-* 杀掉children节点之后,会触法got watcher event
+* 杀掉children节点之后,会触法got watcher event,会有一些延迟
