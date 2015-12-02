@@ -19,9 +19,6 @@ client.once('connected', function () {
     } else {
       console.log('Node: %s is successfully created.', data.path);
     }
-    //setTimeout(function () {
-    //  client.close();
-    //}, 3000);
   });
 });
 
