@@ -36,19 +36,11 @@ function listChildren(client, path) {
       if (!children.length) {
         return console.warn('no members!');
       }
-      var childrenMap = children.map(function (path) {
-        return {
-          path: path,
-          index: Number.parseInt(path.replace('member', ''))
-        }
-      }).sort(function (a, b) {
-        return a.index - b.index;
-      });
-      console.log('childrenMap:%j', childrenMap);
+      children.sort();
+      leader = children[0];
 
-      leader = childrenMap[0];
-      client.getData(electionRootPath + '/' + leader.path, function (err, data) {
-        console.log('leader.path:%s,leader.name:%s', leader.path, data.toString());
+      client.getData(electionRootPath + '/' + leader, function (err, data) {
+        console.log('leader:%s,leader.name:%s', leader, data.toString());
       });
     }
   );
