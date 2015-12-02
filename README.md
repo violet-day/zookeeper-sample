@@ -15,8 +15,13 @@
 * 随机一段时间之后,执行操作之后,释放链接,下一个节点会执行操作
 * 节点创建顺序与执行逻辑代码顺序一致
 
-
+## 同步队列
+* `node example/consumer.js`,达到4个节点之后依次消费
+ 
 ## Reference
 
 * [分布式服务框架 Zookeeper -- 管理分布式环境中的数据](https://www.ibm.com/developerworks/cn/opensource/os-cn-zookeeper/)
 * [node-zookeeper-client](https://github.com/alexguan/node-zookeeper-client)
+* [基于Zookeeper的分步式队列系统集成案例](http://blog.fens.me/hadoop-zookeeper-case/)
+* [ZooKeeper实现分布式队列Queue](http://blog.fens.me/zookeeper-queue/)
+* [ZooKeeper实现分布式FIFO队列](http://blog.fens.me/zookeeper-queue-fifo/)
